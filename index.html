@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Syncro Life là ứng dụng quản lý phong cách sống bằng AI, đồng bộ lịch trình, dinh dưỡng và thời gian nghỉ ngơi.">
+  <title>Syncro Life | AI Lifestyle Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua đến nội dung chính</a>
+  <div class="scroll-progress" aria-hidden="true" data-scroll-progress></div>
+  <div class="cursor-spotlight" aria-hidden="true" data-cursor-spotlight></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Trang chủ Syncro Life">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img">
+          <path d="M12 3 3.5 7.5 12 12l8.5-4.5L12 3Z"></path>
+          <path d="M5 11.5 12 15l7-3.5"></path>
+          <path d="M5 16 12 19.5 19 16"></path>
+        </svg>
+      </span>
+      <span>Syncro<span>Life</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Điều hướng chính">
+      <a href="#features">Tính năng</a>
+      <a href="#workflow">Quy trình</a>
+      <a href="#beta">Beta</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Đổi giao diện sáng hoặc tối">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3v2.2M12 18.8V21M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M3 12h2.2M18.8 12H21M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"></path>
+          <circle cx="12" cy="12" r="4"></circle>
+        </svg>
+      </button>
+      <button class="btn btn-secondary header-download" type="button" data-download-trigger>Tải beta</button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Mở menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Điều hướng di động">
+      <a href="#features">Tính năng</a>
+      <a href="#workflow">Quy trình</a>
+      <a href="#beta">Beta</a>
+      <button class="btn btn-primary" type="button" data-download-trigger>Tải bản APK</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="hero-copy reveal" data-depth="0.35">
+        <p class="eyebrow">
+          <span aria-hidden="true"></span>
+          AI lifestyle management beta
+        </p>
+        <h1>Syncro Life đồng bộ lịch trình, sức khỏe và thời gian nghỉ ngơi bằng AI.</h1>
+        <p class="hero-text">
+          Ứng dụng giúp bạn nhận diện khoảng trống trong ngày, gợi ý task hợp lý, tạo thực đơn theo BMI và biến các mục tiêu cá nhân thành lịch trình có thể thực hiện.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" data-download-trigger>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v11"></path>
+              <path d="m7 10 5 5 5-5"></path>
+              <path d="M5 20h14"></path>
+            </svg>
+            Tải ngay file APK
+          </button>
+          <a class="btn btn-ghost" href="#beta">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="m4 7 8 6 8-6"></path>
+            </svg>
+            Nhận tin cập nhật
+          </a>
+        </div>
+
+        <dl class="trust-strip" aria-label="Thông số nổi bật">
+          <div>
+            <dt data-count-to="98" data-count-suffix="%">0%</dt>
+            <dd>Health match</dd>
+          </div>
+          <div>
+            <dt data-count-to="45" data-count-suffix=" phút">0 phút</dt>
+            <dd>Khoảng trống AI tìm thấy</dd>
+          </div>
+          <div>
+            <dt data-count-to="100" data-count-prefix="0/" data-count-duration="1300">0/0</dt>
+            <dd>CVE scan demo</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="product-preview reveal" aria-label="Bản xem trước giao diện Syncro Life" data-tilt-card data-depth="-0.25">
+        <div class="phone-shell">
+          <div class="phone-sheen" aria-hidden="true"></div>
+          <div class="phone-status">
+            <span>09:42</span>
+            <span>Beta</span>
+          </div>
+          <div class="app-screen">
+            <div class="app-top">
+              <div>
+                <span>Hôm nay</span>
+                <strong>Daily Sync</strong>
+              </div>
+              <button class="sync-pill" type="button" data-sync-demo aria-label="Chạy minh họa đồng bộ AI">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12a8 8 0 0 1-13.7 5.7"></path>
+                  <path d="M4 12A8 8 0 0 1 17.7 6.3"></path>
+                  <path d="M7 18H4v3"></path>
+                  <path d="M17 3h3v3"></path>
+                </svg>
+                Sync
+              </button>
+            </div>
+
+            <div class="health-ring" aria-hidden="true">
+              <div class="ring-core">
+                <span>84</span>
+                <small>readiness</small>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <article class="task-card active">
+                <span>09:30</span>
+                <div>
+                  <strong>Strategy meeting</strong>
+                  <small>Năng lượng tập trung cao</small>
+                </div>
+              </article>
+              <article class="task-card suggested">
+                <span>14:45</span>
+                <div>
+                  <strong>Cardio 25 phút</strong>
+                  <small>AI phát hiện khoảng trống</small>
+                </div>
+              </article>
+              <article class="task-card meal">
+                <span>18:20</span>
+                <div>
+                  <strong>Salmon bowl</strong>
+                  <small>Ngân sách $$, protein cao</small>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="features">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Hệ sinh thái thông minh</p>
+        <h2>Tính năng cốt lõi cho một ngày được sắp xếp gọn gàng.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal" data-tilt-card>
+          <div class="icon-chip blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M20 12a8 8 0 0 1-13.7 5.7"></path>
+              <path d="M4 12A8 8 0 0 1 17.7 6.3"></path>
+              <path d="M7 18H4v3"></path>
+              <path d="M17 3h3v3"></path>
+            </svg>
+          </div>
+          <h3>AI Daily Sync</h3>
+          <p>Phân tích lịch trình và tự động tìm khoảng trống phù hợp để chèn vận động, nghỉ ngơi hoặc task ngắn.</p>
+          <span>Productivity mode</span>
+        </article>
+
+        <article class="feature-card reveal" data-tilt-card>
+          <div class="icon-chip mint" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 3v4"></path>
+              <path d="M17 3v4"></path>
+              <path d="M4 8h16"></path>
+              <path d="M5 5h14v15H5z"></path>
+              <path d="m8 14 2 2 5-5"></path>
+            </svg>
+          </div>
+          <h3>AI Smart Scheduler</h3>
+          <p>Task blocks có thể kéo thả, sắp xếp lại theo năng lượng trong ngày và cảnh báo khi xung đột với mục tiêu cá nhân.</p>
+          <span>Auto balance</span>
+        </article>
+
+        <article class="feature-card reveal" data-tilt-card>
+          <div class="icon-chip coral" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 3v18"></path>
+              <path d="M17 3v18"></path>
+              <path d="M4 7h6"></path>
+              <path d="M14 7h6"></path>
+              <path d="M14 12h6"></path>
+            </svg>
+          </div>
+          <h3>AI Nutrition Engine</h3>
+          <p>Gợi ý thực đơn theo BMI, dị ứng, mức ngân sách và tự tạo Smart Grocery List cho cả tuần.</p>
+          <span>Health match 98%</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="workflow">
+      <div class="workflow-copy reveal">
+        <p class="eyebrow">Từ mục tiêu đến hành động</p>
+        <h2>Một nút Sync, cả ngày được điều chỉnh theo ngữ cảnh của bạn.</h2>
+        <p>
+          Syncro Life gồm nhiều tín hiệu nhỏ: lịch họp, mục tiêu sức khỏe, giờ ăn, giờ ngủ và năng lượng trong ngày. AI sau đó đề xuất các thay đổi rõ ràng, dễ chấp nhận hoặc bỏ qua.
+        </p>
+      </div>
+
+      <div class="workflow-board reveal" data-tilt-card>
+        <div class="board-row">
+          <span>1</span>
+          <div>
+            <strong>Đọc lịch trình</strong>
+            <p>Quét các sự kiện có sẵn và nhận diện khoảng thời gian có thể tối ưu.</p>
+          </div>
+        </div>
+        <div class="board-row">
+          <span>2</span>
+          <div>
+            <strong>Ghép mục tiêu</strong>
+            <p>Cân bằng công việc, vận động, dinh dưỡng và thời gian hồi phục.</p>
+          </div>
+        </div>
+        <div class="board-row">
+          <span>3</span>
+          <div>
+            <strong>Đề xuất lịch mới</strong>
+            <p>Hiển thị task blocks có lý do rõ ràng và trạng thái ưu tiên.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section beta-section" id="beta">
+      <div class="beta-panel reveal">
+        <div>
+          <p class="eyebrow">Tham gia beta</p>
+          <h2>Trở thành nhóm người đầu tiên trải nghiệm Syncro Life.</h2>
+          <p>Đăng ký email để nhận thông báo phiên bản mới, ghi chú phát hành và đặc quyền beta.</p>
+        </div>
+
+        <form class="email-form" action="https://formsubmit.co/phiduykhiem@gmail.com" method="POST" data-email-form novalidate>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="Đăng ký Syncro Life Beta mới">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true">
+          <label for="email">Email của bạn</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="ban@example.com" required>
+            <button class="btn btn-primary" type="submit">Đăng ký</button>
+          </div>
+          <p class="form-message" data-form-message aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Syncro Life Beta. Built for focused days, healthier routines, and calmer planning.</p>
+    <a href="#top">Lên đầu trang</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
